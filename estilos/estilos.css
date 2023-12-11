@@ -1,0 +1,129 @@
+@import url(normalice.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --negroClaro: rgb(29, 30, 32);
+    --negroOscuro: #191919;
+    --blanco: rgb(245, 245, 245);
+    --blancoClaro: #ffffff;
+    --grisClaro: rgb(155, 156, 157);
+    --amarillo: #FFC857;
+    --verde:#59bd85;
+}
+
+body{
+    background-color: var(--blanco);
+}
+
+.hero header .menu{
+    display: flex;
+    padding: 1.5vw 10vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--negroOscuro);
+}
+
+.hero header .menu .titulo p{
+    font-size: 25px;
+    color: var(--blancoClaro);
+    font-weight: 600;
+}
+
+.hero header .menu .enlaces{
+    display: flex;
+}
+
+.hero header .menu .enlaces a{
+    padding: 0 1.5vw;
+    color: var(--blanco);
+}
+
+.hero{
+    padding: 0 2vw;
+}
+
+.contenido-informacion{
+    display: flex;
+    margin: 5% 0;
+    padding: 5vw 0;
+}
+
+.contenido-informacion .contenido{
+    display: grid;
+    padding: 0 10vw;
+    column-gap: 2vw;
+    grid-template-areas: 
+    "foto textos"
+    "foto redes";
+}
+
+.contenido-informacion .contenido .foto-perfil{
+    display: flex;
+    align-items: center;
+    grid-area: foto;
+}
+
+.contenido-informacion .contenido .foto-perfil img{
+    height: 40vh;
+}
+
+.contenido-informacion .contenido .textos{
+    grid-area: textos;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    padding: 3vw 0;
+}
+
+.contenido-informacion .contenido .textos .nombre{
+    font-size: 8vh;
+    font-weight: 700;
+    color: var(--negroOscuro);
+}
+
+.contenido-informacion .contenido .textos .descripcion{
+    font-size: 1.3vw;
+    color: var(--grisClaro);
+    letter-spacing: 1px;
+}
+
+.contenido-informacion .contenido .enlaces .contenedor-enlaces{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenido-informacion .contenido .enlaces .contenedor-enlaces .redes-sociales{
+    display: flex;
+    column-gap: 1vw;
+}
+
+.contenido-informacion .contenido .enlaces .contenedor-enlaces .redes-sociales .red a{
+    font-size: 4vh;
+    color: var(--negroOscuro);
+}
+
+.contenido-informacion .contenido .enlaces .contenedor-enlaces .menu{
+    display: flex;
+    column-gap: 1vw;
+}
+
+.contenido-informacion .contenido .enlaces .contenedor-enlaces .menu a{
+    padding: 0.5vw 2vw;
+    border: 1px solid  var(--grisClaro);
+    border-radius: 0.5vw;
+    color: var(--negroOscuro);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.1vw;
+}
+
+
